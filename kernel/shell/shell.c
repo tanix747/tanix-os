@@ -83,7 +83,7 @@ void shell_execute(char* cmd)
     else if (strncmp(cmd, "mkdir ", 6) == 0)
         ramfs_mkdir(cmd + 6);
 
-    else if (strncmp(cmd, "chngedir ", 3) == 0)
+    else if (strncmp(cmd, "cd ", 3) == 0)
         ramfs_cd(cmd + 3);
 
     else if (strncmp(cmd, "cf ", 3) == 0)
@@ -126,11 +126,11 @@ else if (strcmp(cmd, "sched") == 0)
     print("   Function: ramfs_mkdir(const char* name)\n");
     print("   Purpose: Creates a directory inside current directory.\n\n");
 
-    print("2. showls\n");
+    print("2. ls\n");
     print("   Function: ramfs_ls()\n");
     print("   Purpose: Lists all files and directories in current directory.\n\n");
 
-    print("3. chngedir <name>\n");
+    print("3. cd <name>\n");
     print("   Function: ramfs_cd(const char* name)\n");
     print("   Purpose: Changes current directory.\n");
     print("   Special case: \"cd ..\" moves to parent.\n\n");
