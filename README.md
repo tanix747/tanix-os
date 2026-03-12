@@ -45,7 +45,7 @@ The following commands are currently implemented:
 | ----------------- | --------------------------------------------------------- |
 | `ls`              | List files and directories in the current RAMFS directory |
 | `mkdir <name>`    | Create a new directory                                    |
-| `chngedir <name>` | Change the current directory                              |
+| `cd <name>` | Change the current directory                              |
 | `cf <filename>`   | Create a new file                                         |
 | `open <filename>` | Open and display a file                                   |
 | `rm <name>`       | Remove a file or directory                                |
