@@ -77,7 +77,7 @@ void shell_init()
 
 void shell_execute(char* cmd)
 {
-    if (strcmp(cmd, "showls") == 0)
+    if (strcmp(cmd, "ls") == 0)
         ramfs_ls();
 
     else if (strncmp(cmd, "mkdir ", 6) == 0)
